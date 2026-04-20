@@ -71,16 +71,22 @@ function initPurchaseNotifications() {
     toast.classList.add('show');
     
     // Update progress bar
+    const MAX_SPOTS = 200;
     const filled = document.getElementById('progress-filled');
     const filledText = document.getElementById('progress-text');
     const filledCount = document.getElementById('filled-count');
-    if (filled && filledText && filledCount) {
-      let current = parseInt(filledCount.textContent) || 911;
-      current = Math.min(current + 1, 1000);
-      const percent = Math.round(current / 1000 * 100);
-      filledCount.textContent = current;
-      filledText.textContent = `${percent}%`;
-      filled.style.width = `${percent}%`;
+    const remainingCount = document.getElementById('remaining-count');
+    
+    if (filled && filledText && filledCount && remainingCount) {
+      let current = parseInt(filledCount.textContent) || 150;
+      if (current < MAX_SPOTS) {
+        current = current + 1;
+        const percent = Math.round((current / MAX_SPOTS) * 100);
+        filledCount.textContent = current;
+        filledText.textContent = `${percent}%`;
+        filled.style.width = `${percent}%`;
+        remainingCount.textContent = `${MAX_SPOTS - current} vagas`;
+      }
     }
 
     setTimeout(() => {
@@ -88,14 +94,14 @@ function initPurchaseNotifications() {
     }, 4000);
   }
 
-  // First notification after 5s
-  setTimeout(showNotification, 5000);
+  // First notification after 10s
+  setTimeout(showNotification, 10000);
 
-  // Then every 8-15s
+  // Then every 15-30s
   setInterval(() => {
-    const delay = Math.floor(Math.random() * 7000) + 8000;
+    const delay = Math.floor(Math.random() * 15000) + 15000;
     setTimeout(showNotification, delay);
-  }, 15000);
+  }, 30000);
 }
 
 // ========== SMOOTH SCROLL ==========
