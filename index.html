@@ -34,16 +34,15 @@
                             style="width:16px;height:16px"></i> Oferta expira em: <span class="cd-hours">00</span>:<span
                             class="cd-minutes">00</span>:<span class="cd-seconds">00</span></span></div>
                 <p class="text-muted mb-4" style="font-size:.875rem;font-weight:600"></p>
-                <h1>Você ainda manda<br>seus serviços por<br><span class="text-gradient">texto no WhatsApp?</span></h1>
+                <h1>Você <span class="text-gradient">ainda perde tempo</span><br>mandando seus serviços por<br>texto no WhatsApp?</h1>
             </div>
-            <p class="hero-text text-center" style="font-weight:600">Chega de perder tempo explicando a mesma coisa.
-                Envie materiais <span class="text-amber">prontos, bonitos e profissionais</span> com um clique.</p>
-            <div class="animate-fade-in mb-6"><img src="assets/hero-material.png" alt="Prévia do Material Profissional"
+            <p class="hero-text text-center" style="font-weight:600">Chega de explicar a mesma coisa.
+                Envie materiais prontos, bonitos e <span class="text-gradient">profissionais</span> com um clique.</p>
+            <div class="animate-fade-in mb-6"><img src="https://i.ibb.co/G3WHZnjS/Dos-1.png" alt="Material Profissional"
                     class="hero-image"></div>
             <div class="mb-6"><a href="#pricing" class="btn-gradient">QUERO MEU MATERIAL</a></div>
             <div class="trust-badges">
                 <div class="trust-badge"><i data-lucide="zap"></i> Acesso imediato</div>
-                <div class="trust-badge"><i data-lucide="shield-check"></i> Pagamento seguro</div>
                 <div class="trust-badge"><i data-lucide="infinity"></i> Vitalício</div>
                 <div class="trust-badge"><i data-lucide="badge-check"></i> Garantia 7 dias</div>
             </div>
@@ -90,6 +89,9 @@
             <div class="story-quote">
                 <p class="text-center">E se você pudesse resolver tudo isso <strong>hoje?</strong></p>
             </div>
+            <div style="margin-top:24px;display:flex;justify-content:center">
+                <a href="#pricing" class="btn-gradient" style="max-width:320px;font-size:1.125rem">QUERO RESOLVER ISSO AGORA</a>
+            </div>
         </div>
     </section>
 
@@ -97,28 +99,28 @@
     <section class="section-light">
         <div class="container">
             <div class="section-header">
-                <div class="section-icon-header"><i data-lucide="briefcase"></i></div>
+                <p class="label" style="background:rgba(233,30,144,0.05);display:inline-block;padding:4px 12px;border-radius:999px;margin-bottom:16px">O QUE VOCÊ LEVA</p>
                 <h2>Um kit pronto para<br><span class="text-gradient">transformar seu atendimento</span></h2>
                 <p class="subtitle">Material visual, editável e profissional. Só baixar, personalizar e enviar.</p>
             </div>
-            <div class="mb-8"><img src="assets/mockup-material.png" alt="Material em dispositivos"
-                    style="border-radius:12px"></div>
+            <div class="mb-8" style="overflow:hidden;padding:20px 0"><img src="https://i.ibb.co/F4KLL2n1/Dos-5.png" alt="Material em dispositivos"
+                    style="border-radius:12px;width:100%;transform:scale(1.2);transition:transform 0.3s"></div>
             <div class="stats-grid" style="grid-template-columns:repeat(2,1fr)">
                 <div class="stat-card"><i data-lucide="smartphone"></i>
-                    <div class="stat-value">100%</div>
-                    <div class="stat-label">Digital</div>
+                    <div class="stat-value" style="font-size:1.125rem">100% Digital</div>
+                    <div class="stat-label">Chega no seu e-mail</div>
                 </div>
-                <div class="stat-card"><i data-lucide="headphones"></i>
-                    <div class="stat-value">Suporte</div>
-                    <div class="stat-label">Personalizado</div>
+                <div class="stat-card"><i data-lucide="play-circle"></i>
+                    <div class="stat-value" style="font-size:1.125rem">Fácil de Usar</div>
+                    <div class="stat-label">Vídeo aula inclusa</div>
                 </div>
-                <div class="stat-card"><i data-lucide="palette"></i>
-                    <div class="stat-value">Canva</div>
-                    <div class="stat-label">Editável Grátis</div>
+                <div class="stat-card"><i data-lucide="infinity"></i>
+                    <div class="stat-value" style="font-size:1.125rem">Acesso Vitalício</div>
+                    <div class="stat-label">Pague só uma vez</div>
                 </div>
                 <div class="stat-card"><i data-lucide="zap"></i>
-                    <div class="stat-value">Acesso</div>
-                    <div class="stat-label">Imediato</div>
+                    <div class="stat-value" style="font-size:1.125rem">Pronto Hoje</div>
+                    <div class="stat-label">Acesso imediato</div>
                 </div>
             </div>
             <a href="#pricing" class="btn-gradient">QUERO AGORA</a>
@@ -160,7 +162,7 @@
                         style="animation:pulse 2s infinite"></i><span style="font-size:1.25rem;font-weight:900">Kit
                         Profissional</span></div>
                 <div class="flex-center mb-6"><img src="assets/bonus-material.png" alt="Materiais inclusos"
-                        style="max-width:300px;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))"></div>
+                        style="max-width:480px;width:100%;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.3))"></div>
                 <div class="bonus-list">
                     <div class="bonus-item">
                         <div class="bonus-icon-circle"><i data-lucide="layout-grid"></i></div>
@@ -255,8 +257,19 @@
             <div class="section-header">
                 <h2>Quem usa,<br><span class="text-gradient">não volta atrás</span></h2>
             </div>
-            <div class="mb-8"><img src="assets/testimonial-material.png" alt="Depoimentos"
-                    style="border-radius:12px;box-shadow:var(--shadow-lg)"></div>
+            <div class="carousel-container" id="testimonials-carousel">
+                <div class="carousel-track" id="carousel-track">
+                    <div class="carousel-slide"><img src="https://i.ibb.co/tPsZ5Tpt/Captura-de-tela-2026-04-20-194234.png" alt="Depoimento 1"></div>
+                    <div class="carousel-slide"><img src="https://i.ibb.co/HptVKBYr/Captura-de-tela-2026-04-20-194246.png" alt="Depoimento 2"></div>
+                    <div class="carousel-slide"><img src="https://i.ibb.co/F401TsW7/testimonial-1776724132200.png" alt="Depoimento 3"></div>
+                </div>
+                <div class="carousel-dots" id="carousel-dots">
+                    <div class="carousel-dot active" data-index="0"></div>
+                    <div class="carousel-dot" data-index="1"></div>
+                    <div class="carousel-dot" data-index="2"></div>
+                </div>
+            </div>
+
             <div class="card mb-6">
                 <div class="testimonials-stats">
                     <div class="testi-stat"><i data-lucide="users"></i>
@@ -277,23 +290,94 @@
                     </div>
                 </div>
             </div>
-            <div class="card" style="border-left:3px solid var(--primary);margin-top:24px">
-                <p style="font-style:italic;font-size:.95rem;margin-bottom:16px;line-height:1.7">"Minhas clientes me
-                    veem diferente agora. Pararam de pedir desconto e <strong>agendam mais rápido!</strong>"</p>
-                <div style="display:flex;align-items:center;gap:12px">
-                    <div
-                        style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--primary-light),var(--primary));display:flex;align-items:center;justify-content:center;color:#fff">
-                        <i data-lucide="user" style="width:20px;height:20px"></i></div>
-                    <div>
-                        <p style="font-weight:700;font-size:.875rem">Maria Silva</p>
-                        <p class="text-muted" style="font-size:.75rem">Cabeleireira há 8 anos</p>
+            
+            <div class="carousel-container" id="text-testimonials-carousel" style="margin-top:24px">
+                <div class="carousel-track" id="text-carousel-track">
+                    <div class="carousel-slide">
+                        <div class="card" style="border-left:3px solid var(--primary);height:100%;display:flex;flex-direction:column;padding:24px">
+                            <p style="font-style:italic;font-size:.95rem;margin-bottom:16px;line-height:1.7;flex-grow:1">"Minhas clientes me veem diferente agora. Pararam de pedir desconto e <strong>agendam muito mais rápido!</strong> O material se paga no primeiro dia."</p>
+                            <div style="display:flex;align-items:center;gap:12px">
+                                <img src="assets/avatar_real_1.png" alt="Maria Silva" style="width:48px;height:48px;border-radius:50%;object-fit:cover;box-shadow:none">
+                                <div>
+                                    <p style="font-weight:700;font-size:.875rem">Maria Silva</p>
+                                    <p class="text-muted" style="font-size:.75rem">Cabeleireira há 8 anos</p>
+                                </div>
+                                <div style="margin-left:auto">
+                                    <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div style="margin-left:auto">
-                        <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i
-                                data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+                    <div class="carousel-slide">
+                        <div class="card" style="border-left:3px solid var(--primary);height:100%;display:flex;flex-direction:column;padding:24px">
+                            <p style="font-style:italic;font-size:.95rem;margin-bottom:16px;line-height:1.7;flex-grow:1">"Eu perdia horas no WhatsApp mandando os cuidados do loiro. Agora eu envio o PDF pronto e elas amam, me sinto <strong>muito mais profissional</strong>."</p>
+                            <div style="display:flex;align-items:center;gap:12px">
+                                <img src="assets/avatar_real_2.png" alt="Ana Paula" style="width:48px;height:48px;border-radius:50%;object-fit:cover;box-shadow:none">
+                                <div>
+                                    <p style="font-weight:700;font-size:.875rem">Ana Paula</p>
+                                    <p class="text-muted" style="font-size:.75rem">Especialista em Mechas</p>
+                                </div>
+                                <div style="margin-left:auto">
+                                    <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="card" style="border-left:3px solid var(--primary);height:100%;display:flex;flex-direction:column;padding:24px">
+                            <p style="font-style:italic;font-size:.95rem;margin-bottom:16px;line-height:1.7;flex-grow:1">"As figurinhas mudaram meu atendimento. Minhas clientes estão voltando mais rápido e <strong>indicando amigas!</strong> Recomendo muito."</p>
+                            <div style="display:flex;align-items:center;gap:12px">
+                                <img src="assets/avatar_real_3.png" alt="Juliana Costa" style="width:48px;height:48px;border-radius:50%;object-fit:cover;box-shadow:none">
+                                <div>
+                                    <p style="font-weight:700;font-size:.875rem">Juliana Costa</p>
+                                    <p class="text-muted" style="font-size:.75rem">Cabeleireira e Maquiadora</p>
+                                </div>
+                                <div style="margin-left:auto">
+                                    <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="carousel-dots" id="text-carousel-dots">
+                    <div class="carousel-dot active" data-index="0"></div>
+                    <div class="carousel-dot" data-index="1"></div>
+                    <div class="carousel-dot" data-index="2"></div>
+                </div>
             </div>
+            
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    function initCarousel(trackId, dotsId) {
+                        const track = document.getElementById(trackId);
+                        const dots = document.querySelectorAll('#' + dotsId + ' .carousel-dot');
+                        if (!track || !dots.length) return;
+                        
+                        track.addEventListener('scroll', () => {
+                            const scrollLeft = track.scrollLeft;
+                            const slideWidth = track.clientWidth;
+                            const activeIndex = Math.round(scrollLeft / slideWidth);
+                            
+                            dots.forEach((dot, index) => {
+                                dot.classList.toggle('active', index === activeIndex);
+                            });
+                        });
+
+                        dots.forEach((dot, index) => {
+                            dot.addEventListener('click', () => {
+                                const slideWidth = track.clientWidth;
+                                track.scrollTo({
+                                    left: index * slideWidth,
+                                    behavior: 'smooth'
+                                });
+                            });
+                        });
+                    }
+
+                    initCarousel('carousel-track', 'carousel-dots');
+                    initCarousel('text-carousel-track', 'text-carousel-dots');
+                });
+            </script>
         </div>
     </section>
 
@@ -304,13 +388,13 @@
                 <h2>Escolha seu plano<br><span class="text-gradient">e comece agora</span></h2>
                 <div class="progress-container" style="margin-top:16px">
                     <p style="font-size:.875rem;font-weight:700;margin-bottom:12px">Apenas <span class="text-amber"
-                            id="remaining-count">66 vagas</span> restantes</p>
+                            id="remaining-count">50 vagas</span> com desconto</p>
                     <div class="progress-bar-bg">
-                        <div class="progress-bar-fill" id="progress-filled" style="width:93%"></div><span
-                            class="progress-bar-text" id="progress-text">93%</span>
+                        <div class="progress-bar-fill" id="progress-filled" style="width:75%"></div><span
+                            class="progress-bar-text" id="progress-text">75%</span>
                     </div>
                     <p class="text-muted" style="font-size:.75rem;margin-top:8px"><span
-                            id="filled-count">934</span>/1000 preenchidas</p>
+                            id="filled-count">150</span>/200 preenchidas</p>
                 </div>
             </div>
             <div class="pricing-cards">
@@ -318,7 +402,7 @@
                     <div class="text-center mb-6">
                         <h3 style="font-size:1.25rem;font-weight:900">Opção Básica</h3>
                         <p class="text-muted" style="font-size:.85rem">Só o Manual Pós Mechas</p>
-                        <p class="price-current" style="margin-top:12px">R$ 10,00</p>
+                        <p class="price-current" style="margin-top:12px;font-size:1.75rem">R$ 10,00</p>
                         <p class="price-note">Pagamento único</p>
                     </div>
                     <ul class="pricing-list">
@@ -332,7 +416,7 @@
                         <li class="text-muted" style="opacity:.5"><i data-lucide="x-circle"
                                 style="color:var(--text-dim)"></i> Bônus Exclusivos</li>
                     </ul>
-                    <a href="https://ggcheckout.app/checkout/v5/ERf62EIznmuuvyxAHi1a" class="btn-success" style="margin-top:16px">COMEÇAR AGORA</a>
+                    <a href="https://ggcheckout.app/checkout/v5/ERf62EIznmuuvyxAHi1a" class="btn-success" style="margin-top:16px;background:transparent;border:2px solid var(--success);color:var(--success)">COMEÇAR AGORA</a>
                 </div>
                 <div class="pricing-card featured" style="padding:24px">
                     <div class="pricing-badge"><i data-lucide="star"
